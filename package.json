@@ -1,5 +1,6 @@
 {
-  "name": "react-bootstrap-editable",
+  "name": "@murasoftware/react-bootstrap-editable",
+  "version": "0.0.1",
   "keywords": [
     "react",
     "bootstrap",
@@ -8,14 +9,11 @@
     "edit",
     "ajax"
   ],
-  "version": "0.8.2",
   "main": "dist/editable.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6969 -c .storybook",
-    "prepublish": "npm run dist && npm run distdocs",
-    "dist": "rollup -c",
-    "distdocs": "build-storybook -c .storybook -o docs"
+    "prepublish": "npm run dist",
+    "dist": "rollup -c"
   },
   "babel": {
     "presets": [
@@ -40,23 +38,16 @@
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
-    "@rollup/plugin-node-resolve": "^6.1.0",
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-console": "^1.2.1",
-    "@storybook/addon-info": "^5.3.19",
-    "@storybook/addon-knobs": "^5.3.19",
-    "@storybook/addons": "^5.3.19",
-    "@storybook/react": "^5.3.19",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "babel-loader": "^8.1.0",
-    "react-demo": "^2.0.0",
-    "rollup": "^1.32.1",
+    "rollup": "^2.77.0",
     "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-terser": "^6.1.0",
-    "rollup-plugin-visualizer": "^3.3.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-visualizer": "^5.7.1"
   },
   "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "description": "Clean editable bootstrap components for react. Ajax support!",
   "directories": {
